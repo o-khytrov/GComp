@@ -266,12 +266,12 @@ bool CHotKey::SetValue(GCString& Name, GCString& Value)
 				i = -1;
 				break;
 			}
-			if( i > 0 )
-			{
-				Msg(0, "ERR: Unknown key '%s'", key);
-				throw NULL;
-				//return false;
-			}
+			//if( i > 0 )
+			//{
+			//	Msg(0, "ERR: Unknown key '%s'", key);
+			//	throw NULL;
+			//	//return false;
+			//}
 		}
 	}
 
@@ -307,12 +307,12 @@ void CHotKey::BeautyString(CBeautyString& String, int level)
 			break;
 		}
 
-		if( i > 0 )
+		/*if( i > 0 )
 		{
 			GCString strCode;
 			strCode.Format("%i", KeyCode);
 			str += strCode;
-		}
+		}*/
 	}
 
 	String.add_parameter(level, "HotKey", str, "");

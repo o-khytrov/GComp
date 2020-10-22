@@ -107,7 +107,7 @@ CMMSObject* CMMSObject::FindChild(GCString& sID, bool recursive)
 
 	if( recursive )
 	{
-		for( i = 0; i < n; i++ )
+		for(int i = 0; i < n; i++ )
 		{
 			CMMSObject* obj = GetChild(i);
 			if( obj->MMS_Type == MMS_Property ) continue;

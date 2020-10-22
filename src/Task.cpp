@@ -205,7 +205,7 @@ void CTaskParameters::ParseCommandLine(int argc, TCHAR* argv[])
 	}
 
 	// отрежем заключительные \, если есть
-	i = strlen(DirName) - 1;
+	int i = strlen(DirName) - 1;
 	while( i >= 0 && DirName[i] == '\\' ) DirName[i--] = '\0';
 
 	//In case of external report add its name to directory. 
